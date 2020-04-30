@@ -9252,6 +9252,7 @@
         a = n.n(o),
         s = n(87),
         u = function(e) {
+                                    console.log(e);
             var t = e.article_id,
                 n = e.title,
                 r = e.description,
@@ -26553,7 +26554,6 @@
                     if (!(u.status >= 200 && u.status < 400)) return a();
                     try {
                         var e = JSON.parse(u.responseText);
-                        console.log(e);
                         return o(e)
                     } catch (e) {
                         return a(e)
