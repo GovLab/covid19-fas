@@ -26544,7 +26544,8 @@
         },
         o = function(e, t, n) {
             return new Promise(function(o, a) {
-                var s = "https://lighthouse.helpdocs.io/search?widget_key=" + e + "&query=" + t;
+                // var s = "https://lighthouse.helpdocs.io/search?widget_key=" + e + "&query=" + t;
+                var s = "https://nj.helpjuice.com/search?query="+ t;
                 n && (s += "&language_code=" + n);
                 var u = new XMLHttpRequest;
                 u.open("GET", s, !0), u.onload = function() {
