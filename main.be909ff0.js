@@ -25835,6 +25835,7 @@
         o = n(11),
         a = n.n(o),
         s = function(e) {
+            console.log(e);
             var t = e.searchResults,
                 n = void 0 === t ? [] : t,
                 r = e.styles,
@@ -26563,7 +26564,7 @@
                     query: t,
                     request: u
                 });
-                console.log(u);
+                
             })
         };
 
