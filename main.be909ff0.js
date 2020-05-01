@@ -25830,7 +25830,6 @@
     t.a = d()(v)
 }, function(e, t, n) {
     "use strict";
-        console.log(e);
     var r = n(5),
         i = n.n(r),
         o = n(11),
@@ -25961,8 +25960,7 @@
                                     }
                                     t.t0 = {};
                                 case 6:
-                                    //i = t.t0, o = i.articles, s = void 0 === o ? [] : o, a.setState({
-                                    i = t.t0, o = i, s = void 0 === o ? [] : o, a.setState({
+                                    i = t.t0, o = i.articles, s = void 0 === o ? [] : o, a.setState({
                                         searchResults: s.filter(function(e, t) {
                                             return t <= 2
                                         })
@@ -26317,7 +26315,6 @@
             }, {
                 key: "render",
                 value: function() {
-                    console.log(e);
                     var e = this.props,
                         t = e.categories,
                         n = void 0 === t ? [] : t,
