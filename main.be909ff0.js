@@ -16032,8 +16032,7 @@
                                     }
                                     e.t0 = {};
                                 case 5:
-                                    //i = e.t0, o = i.articles, a = i.totalHits, s = i.stemmedQuery, n.setState({
-                                    i = e.t0, o = i, a = i.totalHits, s = i.stemmedQuery, n.setState({
+                                    i = e.t0, o = i.articles, a = i.totalHits, s = i.stemmedQuery, n.setState({
                                         searchResults: o,
                                         currentSearchResultQuery: t
                                     }), Object(D.c)({
