@@ -16022,7 +16022,6 @@
                     return i(c.a.mark(function r() {
                         var i, o, a, s;
                         return c.a.wrap(function(e) {
-                            console.log(e);
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return e.next = 2, V(t);
@@ -16033,7 +16032,8 @@
                                     }
                                     e.t0 = {};
                                 case 5:
-                                    i = e.t0, o = i.articles, a = i.totalHits, s = i.stemmedQuery, n.setState({
+                                    //i = e.t0, o = i.articles, a = i.totalHits, s = i.stemmedQuery, n.setState({
+                                    i = e.t0, o = i, a = i.totalHits, s = i.stemmedQuery, n.setState({
                                         searchResults: o,
                                         currentSearchResultQuery: t
                                     }), Object(D.c)({
