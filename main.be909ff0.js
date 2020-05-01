@@ -26547,13 +26547,14 @@
             return new Promise(function(o, a) {
                 // var s = "https://lighthouse.helpdocs.io/search?widget_key=" + e + "&query=" + t;
                 var s = "https://nj.helpjuice.com/search?query="+ t;
-                n && (s += "&language_code=" + n);
+                // n && (s += "&language_code=" + n);
                 var u = new XMLHttpRequest;
                 u.open("GET", s, !0), u.onload = function() {
                     if (i(t), 0 === u.status) return a();
                     if (!(u.status >= 200 && u.status < 400)) return a();
                     try {
                         var e = JSON.parse(u.responseText);
+                                console.log(o(e));
                         return o(e)
                     } catch (e) {
                         return a(e)
@@ -26566,7 +26567,7 @@
                 })
             })
         };
-        console.log(o);
+
     t.a = function(e, t) {
         return function(n) {
             return o(e, n, t).catch(console.log)
