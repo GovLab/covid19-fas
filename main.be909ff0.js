@@ -25835,7 +25835,6 @@
         o = n(11),
         a = n.n(o),
         s = function(e) {
-            console.log(e);
             var t = e.searchResults,
                 n = void 0 === t ? [] : t,
                 r = e.styles,
@@ -26545,9 +26544,9 @@
         },
         o = function(e, t, n) {
             return new Promise(function(o, a) {
-                // var s = "https://lighthouse.helpdocs.io/search?widget_key=" + e + "&query=" + t;
-                var s = "https://nj.helpjuice.com/search?query="+ t;
-                // n && (s += "&language_code=" + n);
+                var s = "https://lighthouse.helpdocs.io/search?widget_key=" + e + "&query=" + t;
+                // var s = "https://nj.helpjuice.com/search?query="+ t;
+                n && (s += "&language_code=" + n);
                 var u = new XMLHttpRequest;
                 u.open("GET", s, !0), u.onload = function() {
                     if (i(t), 0 === u.status) return a();
