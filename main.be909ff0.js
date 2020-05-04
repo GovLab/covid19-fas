@@ -8774,6 +8774,7 @@
                 d = f + "widget_key=" + e,
                 p = t ? "&language_code=" + t : "",
                 h = "https://lighthouse.helpdocs.io" + r + d + p;
+                console.log(h);
             return "get" !== u && !n || s()(a) || (h += "&" + Object(o.stringify)(a)), i()({
                 headers: c()(l, function(e) {
                     return !s()(e)
